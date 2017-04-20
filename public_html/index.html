@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="novelfilms">  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Craig Graham</title>
+
+        <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+        <link rel="stylesheet" href="css/craig-brand.css" type="text/css">
+        <link rel="stylesheet" href="css/robro-brand.css" type="text/css">
+        <link rel="stylesheet/less" type="text/css" href="css/global.less">
+        <link rel="stylesheet/less" type="text/css"  href="css/home.less">
+        <link rel="stylesheet/less" type="text/css" href="css/header.less">
+        <link rel="stylesheet/less" type="text/css" href="css/contact.less">
+        <link rel="stylesheet/less" type="text/css" href="css/about.less">
+        <link rel="stylesheet/less" type="text/css" href="css/belowFoldContent.less">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+        <link rel="stylesheet" href="components/responsive.css" type="text/css"/>
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
+       
+        
+    </head>
+
+    <body>      
+        <!--  CONTENT -->
+        <div ng-view autoscroll="true"></div>
+        <!-- /CONTENT -->
+        
+        
+        <!-- Require / JQuery -->
+        <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+        <script src="libs/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+                
+        <!-- AngularJS -->
+        <script src="libs/angular/angular.min.js"></script>
+        <script src="libs/angular-route/angular-route.min.js"></script>
+        <script src="libs/angular-resource/angular-resource.min.js"></script>
+
+        <!-- Other -->
+        <script src="libs/gsap/src/minified/TweenMax.min.js"></script>
+        <script src="libs/less/dist/less.min.js"></script>
+        <!-- Local - Angular -->
+        <script src="app/novelfilms.js"></script>
+        
+        <script src="app/home/home.js"></script>
+        <script src="app/home/homeController.js"></script>
+        <script src="app/home/homeRoutes.js"></script>
+        <script src="app/home/homeService.js"></script>
+        <script src="app/home/homeDirective.js"></script>
+        
+        <script src="app/contact/contact.js"></script>
+        <script src="app/contact/contactController.js"></script>
+        <script src="app/contact/contactRoutes.js"></script>
+        <script src="app/contact/contactDirective.js"></script>
+        
+        <script src="app/about/about.js"></script>
+        <script src="app/about/aboutController.js"></script>
+        <script src="app/about/aboutRoutes.js"></script>
+        <script src="app/about/aboutDirective.js"></script>
+        
+        <script src="app/shared/directives/templatesDirective.js"></script>
+        <script src="app/shared/directives/headerActionsDirective.js"></script>
+
+      
+        
+
+    </body>
+</html>

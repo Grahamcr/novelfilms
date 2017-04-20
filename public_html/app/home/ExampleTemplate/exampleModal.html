@@ -1,0 +1,37 @@
+<div class="example-modal" id="{{example.id}}">
+    <div class="top-left-icon">
+        <img src="{{example.icon}}"/>
+    </div>
+    <div class="top-bar">
+        <p class="modal-title">{{example.name}}</p>
+        <i class="fa fa-close" close-example></i>
+    </div>
+   
+    <div class="scroll-area">
+        
+        <p class='intro'><span></span>{{example.intro}}</p>
+        
+        <div class="exampleList" ng-repeat="item in example.examples">
+            
+            <div class='exampleItem'>
+
+                <a class="view" href="{{item.location}}" target="_blank">
+                    <img src='{{item.img}}'/>
+                </a>
+                <div class="text-area">
+                    <p class="title">{{item.title}}</p>
+                    <p class="description">{{item.caption}}</p>
+                    <a class="view" href="{{item.location}}" target="_blank">View Example</a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="bottom-bar">
+        <a class="close-btn" close-example>Close</a>
+    </div>
+    
+</div>

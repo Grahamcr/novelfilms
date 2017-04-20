@@ -1,0 +1,46 @@
+{
+  "name": "novelfilms",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://novelfilms.tv"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.4",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^0.5.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6",
+    "karma-junit-reporter": "^0.3.3",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9"
+  },
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-loader": "^1.4.4",
+    "angular-resource": "^1.4.4",
+    "angular-route": "^1.4.4",
+    "font-awesome": "^4.3.0",
+    "jquery": "^1.10.2",
+    "less": "^2.5.3",
+    "gsap": "^1.18.0",
+    "scrollmagic": "^2.0.5"
+  },
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 8000",
+    "clear": "rm -fr public_html/libs && mkdir public_html/libs",
+    "copy:angular": "cp -r node_modules/angular public_html/libs/",
+    "copy:angular-loader": "cp -r node_modules/angular-loader public_html/libs/",
+    "copy:angular-resource": "cp -r node_modules/angular-resource public_html/libs/",
+    "copy:angular-route": "cp -r node_modules/angular-route public_html/libs/",
+    "copy:font-awesome": "cp -r node_modules/font-awesome public_html/libs/",
+    "copy:jquery": "cp -r node_modules/jquery public_html/libs/",
+    "copy:less": "cp -r node_modules/less public_html/libs/",
+    "copy:gsap": "cp -r node_modules/gsap public_html/libs/",
+    "copy:scrollmagic": "cp -r node_modules/scrollmagic public_html/libs/",
+    "postinstall": "npm run clear && npm run copy:angular && npm run copy:angular-loader && npm run copy:angular-resource && npm run copy:angular-route && npm run copy:font-awesome && npm run copy:jquery && npm run copy:less && npm run copy:gsap && npm run copy:scrollmagic"
+  }
+}

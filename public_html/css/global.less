@@ -1,0 +1,91 @@
+@primary-blue: #008FD0;
+@primary-yellow: #FFCC33;
+@primary-green: #549600;
+
+.std-button() {
+    width: 175px;
+    height:42px;
+    text-align: center;
+    font-size: 16px;
+    padding-top:19px;
+    cursor: pointer !important;
+    border-radius: 5px;
+    &:hover {
+        background-color: @primary-yellow;
+    }
+    
+    @media screen and (max-width:1240px) {
+        width: 150px;
+        height: 35px;
+        padding-top: 15px;
+    }
+}
+.standard-text() {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 200;
+}
+.header-text() {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+}
+.cursive-text() {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.section-header() {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    h2 {
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 48px;
+        margin: 0px;
+        font-weight: 200;
+        line-height: 55px;
+        margin-bottom: 15px;
+    }
+    p {
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 55%;
+        margin-left: 22.5%;
+    }
+    @media screen and (max-width:950px) {
+        p {
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+    @media screen and (max-width:670px) {
+        h2 {
+            font-size: 40px;
+            line-height: 47px;
+        }
+        p {
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+    @media screen and (max-width:450px) {
+        h2 {
+            font-size: 35px;
+            line-height: 42px;
+        }
+        p {
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
