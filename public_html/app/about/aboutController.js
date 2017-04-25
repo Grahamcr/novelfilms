@@ -26,8 +26,6 @@
           $('#contact-overlay').hide();
       };
       
-      ga('set', 'page', '/about.html');
-      ga('send', 'pageview');
       
       /*******************************************************************************
       *  Check that they filled out the form correctly and if you send it off

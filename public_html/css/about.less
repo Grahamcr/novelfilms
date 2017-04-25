@@ -2,5 +2,44 @@
 
 #about-page {
   
+    #header-row {
+        background-color:#363439;
+        position: relative;
+        
+        #header-img {
+            
+            img {
+                width:100%;
+            }
+        }
+        
+            
+        #header-text-area {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-left: 40px !important;
+            padding-right: 40px!important;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left:50%;
+            
+            p {
+                text-align: right;
+                .standard-text();
+                color:#FFF;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                
+                span {
+                    color: @primary-yellow;
+                    font-weight: 800;
+                }
+            }
+        }
+        
+        
+    }
     
 }
