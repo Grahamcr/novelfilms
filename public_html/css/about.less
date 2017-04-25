@@ -85,4 +85,86 @@
         }
     }
     
+    #staff-img-row {
+        padding-top: 20px;
+        .staff-img {
+             img {
+                width:100%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+    
+    #staff-row {
+        padding-top: 20px;
+        .staff-block {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+            
+            #details-block {
+                background-color: @primary-blue;
+                
+                
+                #name-block {
+                    text-align: center;
+                    width: 90%;
+                    margin-left: 5%;
+                    .standard-text();
+                    
+                    #first-name {
+                        text-transform: uppercase;
+                        color: @primary-red;
+                        font-size: 55px;
+                        font-weight: 500;
+                        margin-bottom: 0px;
+                    }
+                    
+                    #last-name {
+                        text-transform: uppercase;
+                        color: @primary-yellow;
+                        font-size: 30px;
+                        font-weight: 500;
+                        margin-top: -15px;
+                    }
+                }
+                #title-block {
+                    background-color: @primary-yellow;
+                    width:100%;
+                    .standard-text();
+                    
+                    p {
+                        text-transform: uppercase;
+                        width: 100%;
+                        text-align: center;
+                        color:@primary-blue;
+                        letter-spacing: 20px;
+                        font-size: 20px;
+                        font-weight: 500;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
+                }
+                
+                #text-block {
+                    height: 250px;
+                    text-align: left;
+                    color: #FFF;
+                    padding-bottom: 40px;
+                    
+                    p {
+                        margin-top: 20px;
+                        padding-right: 30px;
+                        padding-left: 30px;
+                        text-transform: uppercase;
+                        .standard-text();
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            
+        }
+    }
+    
 }
