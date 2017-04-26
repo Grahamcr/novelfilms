@@ -47,7 +47,14 @@
     * On Page Load Function
     ****************************************************************************************/   
 		angular.element(document).ready(function () {
-            $("#video-preview").hover(function() {
+            $("#video-1").hover(function() {
+              $(this).prop("controls", true);
+            }, function() {
+              $(this).prop("controls", false);
+
+            });
+            
+            $("#video-2").hover(function() {
               $(this).prop("controls", true);
             }, function() {
               $(this).prop("controls", false);
