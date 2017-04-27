@@ -92,6 +92,17 @@
                  });
              };
         }])
+     
+        /***************************************************************************************
+          * Redirect the user to the partner page
+          ****************************************************************************************/
+         .directive("redirectPartner", ['$location', function ($location) {
+             return function (scope, element, attrs) {
+                 element.bind("click", function () {
+                     window.open("#/partner", "_self");
+                 });
+             };
+        }])
          /***************************************************************************************
           * Scroll down when the user clicks the learn more link or down cheveron
           ****************************************************************************************/

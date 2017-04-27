@@ -16,9 +16,10 @@
       *  Global Variables
       ********************************************************************************/
       
-      $scope.portfolio = true;
+      $scope.home = "active";
       $scope.contact = false;
       $scope.about = false;
+      $scope.partner = false;
 
 
       
@@ -47,6 +48,8 @@
     * On Page Load Function
     ****************************************************************************************/   
 		angular.element(document).ready(function () {
+            
+            
             $("#video-1").hover(function() {
               $(this).prop("controls", true);
             }, function() {
@@ -61,6 +64,7 @@
 
             });
 
+            
             
     });
       
