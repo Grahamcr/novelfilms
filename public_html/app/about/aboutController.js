@@ -123,6 +123,12 @@
     ****************************************************************************************/   
 		angular.element(document).ready(function () {
             
+            $('.office-carousel').slick({
+                infinite: true,
+                dots: true
+              });
+            
+            
             $("#video-preview").hover(function() {
               $(this).prop("controls", true);
             }, function() {
