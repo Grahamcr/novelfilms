@@ -23,6 +23,15 @@
                         transform: translate(-50%, 20%);
                         margin-top: 10px;
                     }
+                    @media screen and (max-width: 1200px) {
+                        margin-top: 20px;
+                    }
+                    @media screen and (max-width: 768px) { 
+                        margin-top: 0px;
+                    }
+                    @media screen and (max-width: 515px) { 
+                        display: none;
+                    }
                 }
                 #link-col {
                     border-left: solid #DDD 1px;
@@ -51,6 +60,11 @@
                                     color: @primary-blue !important;
                                 }
                             }
+                        }
+                        @media screen and (max-width: 768px) {
+                            margin-bottom: 0px;   
+                            padding-left: 20px;
+                            margin-top: 15px;
                         }
                     }
                 }
