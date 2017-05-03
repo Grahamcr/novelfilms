@@ -8,8 +8,7 @@
     
     
         /**********************************************************************
-        * Header Directive contains the HTML for the page header used on each
-        * page of FooBar
+        * Header Directive 
         ***********************************************************************/
         .directive('header', function () {
             return {
@@ -17,16 +16,15 @@
             };
         })
     
-        /**********************************************************************
-        * Header Directive contains the HTML for the page header used on each
-        * page of FooBar
+         /**********************************************************************
+        * Footer Directive
         ***********************************************************************/
-        .directive('belowFoldContent', function () {
+        .directive('footer', function () {
             return {
-                transclude: true,
-                templateUrl: 'app/shared/templates/belowFoldContent.html'
+                templateUrl: 'app/shared/templates/footer.html'
             };
         })
+        
     
        
     
