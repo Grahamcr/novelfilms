@@ -1,0 +1,103 @@
+@import "global.less";
+
+#watch-page {
+    padding: 20px 30px;
+    
+    #watch-header {
+        position: relative;
+        z-index: 3;
+        #watch-col {
+            img {
+                width:100%;
+            }
+        }
+    }
+    
+    #middle-block {
+        background-image: url('../img/watch/city.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        top: 200px;
+        margin-bottom: 200px;
+        
+        #middle-block-col {
+            
+            #tv-row {
+                margin-top:-235px;
+                #tv-col {
+                    position: relative;
+                    
+                    #background-tv {
+                        z-index: 5;
+                        
+                        width:75%;
+                        position: relative;
+                        left: 50%;
+                        margin-left: -37.5%;
+                    }
+                    
+                    #callout-video {
+                        z-index: 10;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width:55%;
+                        margin-top: 15px;
+                        object-fit: cover;
+                    }
+                }
+            }
+            
+            #callout-row {
+                padding-top: 20px;
+                padding-bottom: 50px;
+                text-align: center;
+                display: inline-block;
+                
+                #callout-col {
+                    background-color: rgba(0,0,0,.7);
+                    padding: 60px 0px;
+                    .standard-text();
+                    
+                    #callout-title {
+                        text-transform: uppercase;
+                        color:#FFF;
+                        font-size: 44px;
+                        font-weight: 900;
+                        margin-bottom: 0px;
+                    }
+                    #callout-subtitle {
+                        text-transform: uppercase;
+                        color: @primary-yellow;
+                        font-size: 22px;
+                    }
+                    #callout-description {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color:#FFF;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
+    #video-block {
+        background-color:#d9ad45;
+        
+        #video-col {
+            
+            #video-nav-bar {
+                background-color: #FFF;
+                .nav-link {
+                    
+                }
+            }
+        }
+    }
+}

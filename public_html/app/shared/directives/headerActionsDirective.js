@@ -94,6 +94,17 @@
         }])
      
         /***************************************************************************************
+          * Redirect the user to the contact page
+          ****************************************************************************************/
+         .directive("redirectWatch", ['$location', function ($location) {
+             return function (scope, element, attrs) {
+                 element.bind("click", function () {
+                     window.open("#/watch", "_self");
+                 });
+             };
+        }])
+     
+        /***************************************************************************************
           * Redirect the user to the partner page
           ****************************************************************************************/
          .directive("redirectPartner", ['$location', function ($location) {
