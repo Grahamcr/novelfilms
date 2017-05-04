@@ -20,7 +20,15 @@
       $scope.about = false;
       $scope.partner = false;
       $scope.watch = "active";
-      /*******************************************************************************
+     
+      
+      //video preview section variables 
+      $scope.all = "active";
+      $scope.mv = false;
+      $scope.coms = false;
+      $scope.promos = false;
+      $scope.shorts = false;
+     /*******************************************************************************
       *  Close the given popup
       ********************************************************************************/
       $scope.close = function(id) {
@@ -124,13 +132,8 @@
     ****************************************************************************************/   
 		angular.element(document).ready(function () {
             
-            $('.office-carousel').slick({
-                infinite: true,
-                dots: true
-              });
             
-            
-            $("#callout-video").hover(function() {
+            $(".preview-video").hover(function() {
               $(this).prop("controls", true);
             }, function() {
               $(this).prop("controls", false);
