@@ -160,6 +160,37 @@
                         text-decoration: none;
                     }
                 }
+                
+                @media screen and (max-width: 992px) {
+                    .nav-link:first-child {
+                        margin-left: 35px;
+                    }   
+                    .nav-link:last-child {
+                        margin-right: 10px;
+                    }
+                    .nav-link {
+                        font-size: 16px;
+                    }
+                }
+                
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                    .nav-link:first-child {
+                        margin-left: 0px;
+                    }   
+                    .nav-link:last-child {
+                        margin-right: 0px;
+                    }
+                    .nav-link:nth-child(2) {
+                        margin-right: 20px;
+                    }
+                    .nav-link {
+                        width: calc(100% / 6);  
+                        display: inline-block;
+                        vertical-align: top;   
+                        text-align:center;    
+                    }
+                }
             }
             
             #video-preview-row {
