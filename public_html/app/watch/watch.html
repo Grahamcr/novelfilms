@@ -55,6 +55,23 @@
                 </div>
             </div>
             
+            <div id="video-nav-dropdown" class="row">
+                <p id="label">CATEGORY:</p>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{category}} <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a ng-click="setpreview('all');">ALL</a></li>
+                    <li><a ng-click="setpreview('mv');">MUSIC-VIDEOS</a></li>
+                    <li><a ng-click="setpreview('coms');">COMMERIALS</a></li>
+                    <li><a ng-click="setpreview('promos');">PROMOS</a></li>
+                    <li><a ng-click="setpreview('shorts');">SHORTS</a></li>
+                  </ul>
+                </div>
+                
+            </div>
+            
             <div class="row" id="video-preview-row">
                 
                 <!--ALL VIDEO SECTION-->

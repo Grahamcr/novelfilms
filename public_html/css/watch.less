@@ -140,6 +140,7 @@
                 margin-left: 20px;
                 margin-right: 20px;
                 padding-bottom: 30px;
+                
                 .nav-link {
                     text-align: center;
                     display: inline-block;
@@ -189,6 +190,104 @@
                         display: inline-block;
                         vertical-align: top;   
                         text-align:center;    
+                    }
+                }
+                
+                @media screen and (max-width: 717px) {
+                    text-align: center;
+                    .nav-link:first-child {
+                        margin-left: -20px;
+                    }   
+                    .nav-link:last-child {
+                        margin-right: -20px;
+                    }
+                    .nav-link:nth-child(2) {
+                        margin-right: 10px;
+                    }
+                    .nav-link:nth-child(3) {
+                        margin-right: 10px;
+                    }
+                    .nav-link {
+                        font-size: 14px;   
+                    }
+                }
+                @media screen and (max-width: 637px) {
+                    display: none;
+                }
+            }
+            
+            #video-nav-dropdown {
+                display: none;
+                background-color: #FFF;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-bottom: 30px;
+                
+                #label {
+                    float:left;
+                    margin-right: 10px;
+                    font-size: 20px;
+                    .standard-text();
+                    font-weight: 700;
+                    color:#555;
+                    padding-top: 5px;
+                    margin-left: 20px;
+                    margin-top: 10px;
+                }
+                .btn-group {
+                    margin-top: 10px;
+                    button {
+                        font-size: 16px;
+                        font-weight: 700;
+                        min-width: 170px;
+                        text-align: left;
+                        position: relative;
+                        
+                        .caret {
+                            font-size: 15px;
+                            margin-top: 0px;
+                            margin-left: 5px;
+                            color:#555;
+                            position: absolute;
+                            right: 5px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            border-top: 7px dashed;
+                            border-right: 7px solid transparent;
+                            border-left: 7px solid transparent;
+                        }
+                    }
+                    ul {
+                        li {
+                            a {
+                                font-size: 16px;
+                                .standard-text();
+                                color:#555 !important;
+                            }
+                        }
+                    }
+                }
+                @media screen and (max-width: 637px) {
+                    display: inherit;
+                }
+                @media screen and (max-width: 405px) {
+                     #label { 
+                         font-size: 14px;
+                         margin-top: 12px;
+                    }
+                    .btn-group {
+                        button {
+                            min-width: 120px;
+                            font-size: 12px;
+                        }
+                        ul {
+                            li {
+                                a {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
                     }
                 }
             }

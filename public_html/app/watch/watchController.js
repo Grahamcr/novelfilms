@@ -28,7 +28,8 @@
       $scope.coms = false;
       $scope.promos = false;
       $scope.shorts = false;
-     /*******************************************************************************
+      $scope.category = "ALL";
+      /*******************************************************************************
       *  Change which set of videos is visible in the preview section
       ********************************************************************************/
       $scope.setpreview = function(id) {
@@ -36,18 +37,23 @@
           switch(id) {
             case 'all':
               $scope.all = "active";
+              $scope.category = "ALL";
             break;
             case "mv":
               $scope.mv = "active";
+              $scope.category = "MUSIC-VIDEOS";
             break;
             case "coms":
               $scope.coms = "active";
+              $scope.category = "COMMERIALS";
             break;
             case "promos":
                $scope.promos = "active";
+               $scope.category = "PROMOS";
             break;
             case "shorts":
                $scope.shorts = "active";
+               $scope.category = "SHORTS";
             break;
             }
       };
