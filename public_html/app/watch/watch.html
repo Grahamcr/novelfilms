@@ -39,19 +39,19 @@
         
             <div id="video-nav-bar" class="row">
                 <div class="col-md-2 col-md-offset-1 nav-link {{all}}">
-                    <a>ALL</a>
+                    <a ng-click="setpreview('all');">ALL</a>
                 </div>
                 <div class="col-md-2 nav-link {{mv}}">
-                    <a>MUSIC-VIDEOS</a>
+                    <a ng-click="setpreview('mv');">MUSIC-VIDEOS</a>
                 </div>
                 <div class="col-md-2 nav-link {{coms}}">
-                    <a>COMMERIALS</a>
+                    <a ng-click="setpreview('coms');">COMMERIALS</a>
                 </div>
                 <div class="col-md-2 nav-link {{promos}}">
-                    <a>PROMOS</a>
+                    <a ng-click="setpreview('promos');">PROMOS</a>
                 </div>
                 <div class="col-md-2 nav-link {{shorts}}">
-                    <a>SHORTS</a>
+                    <a ng-click="setpreview('shorts');">SHORTS</a>
                 </div>
             </div>
             
@@ -139,6 +139,154 @@
                         </div>
                         
                     </div>
+                    
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <!--Music-Video SECTION-->
+                <div class="video-preview-col {{mv}}" id="all-preview">
+                    
+                    <div class="preview-row row">
+                        
+                        <div class="preview-col col-md-5 col-md-offset-1">
+                            <video onclick="this.play();" poster="img\watch\usedStills\chair.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="preview-col col-md-5">
+                            <video onclick="this.play();" poster="img\watch\usedStills\water.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="preview-row row">
+                        
+                        <div class="preview-col col-md-5 col-md-offset-1">
+                            <video onclick="this.play();" poster="img\watch\usedStills\say.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="preview-col col-md-5">
+                            <video onclick="this.play();" poster="img\watch\usedStills\sitting.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                    </div>
+                      
+                    <div class="preview-row row">
+                        
+                        <div class="preview-col col-md-5 col-md-offset-1">
+                            <video onclick="this.play();" poster="img\watch\usedStills\lgw.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="preview-col col-md-5">
+                            <video onclick="this.play();" poster="img\watch\usedStills\coexist.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                
+                
+                <!--COMMERIALS SECTION-->
+                <div class="video-preview-col {{coms}}" id="all-preview">
+                    
+                    
+                    <div class="preview-row row">
+                        
+                        <div class="preview-col col-md-5 col-md-offset-1">
+                            <video onclick="this.play();" poster="img\watch\usedStills\say.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="preview-col col-md-5">
+                            <video onclick="this.play();" poster="img\watch\usedStills\sitting.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                    </div>
+                      
+                    <div class="preview-row row">
+                        
+                        <div class="preview-col col-md-5 col-md-offset-1">
+                            <video onclick="this.play();" poster="img\watch\usedStills\lgw.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                         <div class="preview-col col-md-5">
+                             
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <!--PROMOS SECTION-->
+                <div class="video-preview-col {{promos}}" id="all-preview">
+                    
+                    
+                    <div class="preview-row row">
+                        
+                        <div class="preview-col col-md-5 col-md-offset-1">
+                            <video onclick="this.play();" poster="img\watch\usedStills\say.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="preview-col col-md-5">
+                            <video onclick="this.play();" poster="img\watch\usedStills\sitting.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                    </div>
+                      
+                    
+                </div>
+                
+                
+                
+                
+                
+                <!--SHORTS SECTION-->
+                <div class="video-preview-col {{shorts}}" id="all-preview">
+                    
+                    
+                    <div class="preview-row row">
+                        
+                        <div class="preview-col col-md-5 col-md-offset-1">
+                            <video onclick="this.play();" poster="img\watch\usedStills\say.png" class="preview-video">
+                                <source src="video/demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        
+                        <div class="preview-col col-md-5">
+                            
+                        </div>
+                        
+                    </div>
+                      
                     
                 </div>
                 
