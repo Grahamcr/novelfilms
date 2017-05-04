@@ -316,6 +316,39 @@
                         .preview-col:last-child {
                             margin-left: 30px;
                         }
+                        
+                        @media screen and (max-width: 992px) {
+                            .preview-col:first-child {
+                                margin-right: 10px;
+                                margin-left: 6.5%;
+                            }
+                            .preview-col:last-child {
+                                margin-left: 10px;
+                            }
+                        }
+                        
+                        @media screen and (max-width: 508px) {
+                            .preview-col:first-child {
+                                margin-left: 6%;
+                            }
+                        }
+                        @media screen and (max-width: 417px) {
+                            .preview-col {
+                                width:80%;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                position: relative;
+                                left: 10%;
+                            }
+                            .preview-col:first-child {
+                                margin-right: 0px;
+                                margin-left: 0px;
+                                margin-bottom: 13px;
+                            }
+                            .preview-col:last-child {
+                                margin-left: 0px;
+                            }
+                        }
                     }
                 }
                  .video-preview-col.active {
