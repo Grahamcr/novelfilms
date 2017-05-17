@@ -26,62 +26,52 @@
     #c2a-row {
         padding-top: 10px;
         
-        .white-space {
-            background-color: #FFF;
-            height: 110px;
-            width: 20px;
-            float:left;
-            position: relative;
-            z-index: 10;
-            
-            @media screen and (max-width: 992px) {
-                width: 10px;
+        .c2a-intro-col {
+            color:#333;
+            .standard-text();
+            text-align: center;
+
+            #c2a-line {
+                width: 30%;
+                margin-left: 35%;
+                height: 1px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                background-color:@primary-red;
             }
-            @media screen and (max-width: 768px) {
-                display: none;
+            #c2a-intro-title {
+                font-weight: 900;
+                font-size: 38px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            #c2a-intro-blurb {
+                font-size: 14px;
+                margin-bottom: 40px;
             }
         }
         .c2a-block {
-            margin-right: -20px !important;
-            height: 110px;
-            position: relative;
+
+            display: inline-block;
+            text-align: center;
             
             .icon-area {
-                float:left;
-                background-color:#FFF;
-                position: relative;
-                left: 35px;
-                position: relative;
-                height: 110px;
-                padding-left: 30px;
-                padding-right: 30px;
+                   height: 100px; 
+                   position: relative;
                 
                 img {
-                    width:30px;
+                    width: 40px;
                     position: absolute;
                     top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-                
-                @media screen and (max-width: 992px) {
-                    height: 90px;
-                }
-                @media screen and (max-width: 768px) {
-                    margin-top: 3px;
-                    height: 62px;
-                    margin-bottom: 10px;
+                    transform: translateY(-50%);
+                    margin-left: -15px;
+                    
                 }
             }
             
             .text-area {
                 .standard-text();
-                position: relative;
-                left: 115px;
-                color:#FFF;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
+                
                 
                 #title {
                     font-size: 18px;
@@ -93,66 +83,21 @@
                     font-size: 14px;
                     margin: 0px;
                 }
-                
-                @media screen and (max-width: 992px) {
-                    #title {
-                        font-size: 12px;
-                    }
-                    #description {
-                        font-size: 12px;
-                        padding-right: 20px;
-                    }
+                .c2a-link {
+                    display: block;
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-weight: 900;
+                    .standard-text();
                 }
-                
-                @media screen and (max-width: 768px) {
-                    #title {
-                        font-size: 16px;
-                    }
-                }
-                
-                @media screen and (max-width: 340px) {
-                    #title {
-                        font-size: 12px;
-                    }
-                    #description {
-                        font-size: 10px;
-                        padding-right: 20px;
-                    }
-                }
-            }
-            
-            &.blue-block {
-                background-color: #293747;
-                @media screen and (max-width: 768px) {
-                    border: solid 1px #293747;
-                }
-            }
-            &.yellow-block {
-                background-color: #e1b250;
-                @media screen and (max-width: 768px) {
-                    border: solid 1px #e1b250;
-                }
-            }
-            &.red-block {
-                background-color: #df5555;
-                @media screen and (max-width: 768px) {
-                    border: solid 1px #df5555;
-                }
-            }
-            
-            @media screen and (max-width: 992px) {
-                height: 90px;
-                margin-right: -10px !important;
-            }
-            @media screen and (max-width: 768px) {
-                height: 70px;
-                margin-right: 0px !important;
+
+
             }
         }   
     }
     
     #exhibit-row {
-        padding-top: 20px;
+        padding-top: 60px;
         
         #exhibit-col {
             
