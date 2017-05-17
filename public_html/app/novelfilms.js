@@ -6,7 +6,8 @@ angular.module('novelfilms', [
     'novelfilms.home',
     'novelfilms.contact',
     'novelfilms.about',
-    'novelfilms.watch'
+    'novelfilms.watch',
+    'novelfilms.landing'
     
 ]).config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.withCredentials = true;

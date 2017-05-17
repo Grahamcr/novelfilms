@@ -68,7 +68,7 @@
          .directive("redirectHome", ['$location', function ($location) {
              return function (scope, element, attrs) {
                  element.bind("click", function () {
-                     window.open("#/", "_self");
+                     window.open("#/home", "_self");
                  });
              };
         }])

@@ -3,7 +3,7 @@
   
   'use strict';
 
-  angular.module('novelfilms.home')
+  angular.module('novelfilms.landing')
     .config(config);
 
   /**
@@ -13,9 +13,9 @@
   function config($routeProvider) 
   {
     $routeProvider
-      .when('/home', {
-        controller: 'HomeController',
-        templateUrl: 'app/home/home.html'
+      .when('/', {
+        controller: 'LandingController',
+        templateUrl: 'app/landing/landing.html'
       });
   }
 
