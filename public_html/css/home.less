@@ -46,8 +46,25 @@
                 margin-bottom: 20px;
             }
             #c2a-intro-blurb {
-                font-size: 14px;
+                font-size: 16px;
                 margin-bottom: 40px;
+            }
+            
+            @media screen and (max-width: 600px) {
+                #c2a-intro-title {
+                    font-size: 30px;
+                }
+                #c2a-intro-blurb {
+                    font-size: 14px;
+                }
+            }
+            @media screen and (max-width: 450px) {
+                #c2a-intro-title {
+                    font-size: 25px;
+                }
+                #c2a-intro-blurb {
+                    font-size: 12px;
+                }
             }
         }
         .c2a-block {
@@ -92,6 +109,60 @@
                 }
 
 
+            }
+             @media screen and (max-width: 668px) {
+                 .icon-area {
+                     height: 80px;
+                     
+                     img {
+                         width: 30px;
+                         margin-left: -10px;
+                     }
+                 }
+                 .text-area {
+                     #description {
+                        display: none;    
+                     }
+                     #title {
+                         font-size: 16px;
+                     }
+                     .c2a-link {
+                         font-size: 14px;
+                     }
+                     
+                 }
+            }
+            @media screen and (max-width: 458px) {
+                 .icon-area {
+                     height: 60px;
+                     
+                     img {
+                         width: 25px;
+                         margin-left: -7px;
+                     }
+                 }
+                 .text-area {
+                     #title {
+                         font-size: 12px;
+                     }
+                     .c2a-link {
+                         font-size: 10px;
+                     }
+                     
+                 }
+            }
+            @media screen and (max-width: 326px) {
+                 
+                 .text-area {
+                     #title {
+                         font-size: 12px;
+                         height:40px;
+                     }
+                     .c2a-link {
+                         font-size: 10px;
+                     }
+                     
+                 }
             }
         }   
     }
