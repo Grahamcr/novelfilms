@@ -70,7 +70,17 @@
             }
         }
         .c2a-block {
-
+            .active-line {
+                border: none;
+            }
+            &.active {
+                .active-line {
+                    display: block;
+                    width: 40%;
+                    height: 2px;
+                    background-color: @primary-blue;
+                }
+            }
             display: inline-block;
             text-align: center;
             
@@ -168,7 +178,53 @@
             }
         }   
     }
-    
+    #collapse-wrapper {
+        &.active {
+            min-height: 500px;
+        }
+    #formArea {
+        .single-form-area {
+            display: none;
+            .standard-text();
+            
+            &.active {
+                display: inherit;
+            }
+            .submit-btn {
+                background-color: @primary-blue;
+                color: #FFF;
+                .standard-text();
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 30px;
+                &:hover {
+                    background-color: @primary-yellow;
+                }
+            }
+            .form-title {
+                margin-top: 55px;
+                color: @primary-blue;
+                font-size: 30px;
+                margin-bottom: 0px;
+            }
+            .form-title-hr {
+                width: 100%;
+                background-color: @primary-blue;
+                opacity: .5;
+                height: 1px;
+                margin-left: 0%;
+                margin-top: 0px;
+                margin-bottom: 35px;
+            }
+            .input-group {
+                margin-bottom: 30px;
+            }
+        }
+        &.active {
+            display: block !important;
+        }
+    }
+    }
     #exhibit-row {
         padding-top: 60px;
         

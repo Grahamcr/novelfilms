@@ -31,7 +31,7 @@
             <p id="c2a-intro-blurb">A creative community thrives on the contributions of as many people as possible to illustrate the stories of this world.  We believe that even YOU have a place on our team! Learn more by inquiring through one of the forms below.</p>
         </div>
     
-        <div class="c2a-block col-md-4 col-sm-4 col-xs-4 red-block">
+        <div class="c2a-block col-md-4 col-sm-4 col-xs-4 red-block {{script}}" data-toggle="collapse" data-target="#formArea" aria-expanded="false" aria-controls="formArea" ng-click="formtoggle('script');">
             
             <div class="icon-area">
                 <img src="img/partner/document_icon_inverted.png"/>
@@ -43,9 +43,11 @@
                 <a class="c2a-link">Fill Out Form</a>
             </div>
             
+            <hr class="active-line"/>
+            
         </div>
 
-        <div class="c2a-block col-md-4 col-sm-4 col-xs-4 yellow-block">
+        <div class="c2a-block col-md-4 col-sm-4 col-xs-4 yellow-block {{auditions}}" data-toggle="collapse" data-target="#formArea" aria-expanded="false" aria-controls="formArea" ng-click="formtoggle('auditions');">
             
             <div class="icon-area">
                 <img src="img/partner/person_icon_inverted.png"/>
@@ -57,24 +59,135 @@
                 <a class="c2a-link">Fill Out Form</a>
             </div>
             
+            <hr class="active-line"/>
+            
         </div>
 
-        <div class="c2a-block col-md-4 col-sm-4 col-xs-4 blue-block">
+        <div class="c2a-block col-md-4 col-sm-4 col-xs-4 blue-block {{joinTeam}}" data-toggle="collapse" data-target="#formArea" aria-expanded="false" aria-controls="formArea" ng-click="formtoggle('join');">
             
             <div class="icon-area">
                 <img src="img/partner/camera_icon_inverted.png"/>
             </div>
             
-            <div class="text-area">
+            <div class="text-area" >
                 <p id="title">Join Our Team</p>
                 <p id="description">Crew application form</p>
                 <a class="c2a-link">Fill Out Form</a>
             </div>
             
+            <hr class="active-line"/>
+            
         </div>
         
     </div>
+    
+   <div id="collapse-wrapper" class="{{formWrapper}}"> 
+    <div class="collapse container {{showForm}}" id="formArea">
+        
+        <div id="joinTeam" class="{{joinTeam}} single-form-area">
+            <p class="form-title">Join Team</p>
+            <hr class="form-title-hr"/>
+            
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
 
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">@example.com</span>
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-addon">.00</span>
+            </div>
+            
+            <label for="basic-url">What does your Mom call you?</label>
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            </div>
+
+            <label for="basic-url">Your wicked cool URL</label>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            
+            <button class="submit-btn btn">Submit</button>
+            
+        </div>
+        
+        <div id="auditions" class="{{auditions}} single-form-area">
+            <p class="form-title">Audition Request</p>
+            <hr class="form-title-hr"/>
+            
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-addon">.00</span>
+            </div>
+            
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">@example.com</span>
+            </div>
+
+            <label for="basic-url">Your wicked cool URL</label>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            
+            <label for="basic-url">Another wicked cool URL</label>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            
+            <button class="submit-btn btn">Submit</button>
+        </div>
+        
+        
+        
+        
+        <div id="script" class="{{script}} single-form-area">
+           <p class="form-title">Script Submission</p>
+            <hr class="form-title-hr"/>
+            
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">@example.com</span>
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-addon">.00</span>
+            </div>
+
+            <label for="basic-url">Your wicked cool URL</label>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            
+            <button class="submit-btn btn">Submit</button>
+        </div>
+        
+    </div>
+</div>
     <div id="exhibit-row" class="row">
     
         <div id="exhibit-col" class="col-md-12">

@@ -1,6 +1,7 @@
 @import "global.less";
 
 #video-header {
+    overflow: hidden;
     
     #overlay {
         background-color: rgba(0,0,0,.8);
@@ -16,7 +17,7 @@
         color: #FFF;
         
         #intro {
-            margin-top: 10%;
+            margin-top: 12%;
             
             #quote {
                 .fancy-text();
@@ -32,7 +33,7 @@
             }
             
             #c2a-button {
-                margin-top: 50px;
+                margin-top: 80px;
                 padding: 10px 10px;
                 border: 1px solid #FFF;
                 width:150px;
@@ -45,6 +46,11 @@
                     font-weight: 300;
                     margin: 0px;
                     padding: 0px;
+                }
+                
+                &:hover {
+                    background-color: @primary-yellow;
+                    color: #FFF;
                 }
             }
         }

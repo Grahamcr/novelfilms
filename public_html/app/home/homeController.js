@@ -22,28 +22,55 @@
       $scope.partner = false;
 
 
+      $scope.joinTeam = false;
+      $scope.auditions = false;
+      $scope.script = false;
+      $scope.showForm = false;
+      $scope.activeForm = 'none';
       
       
+      $scope.formtoggle = function(form) {
+          $scope.joinTeam = 
+          $scope.auditions = 
+          $scope.script = false;
+          $scope.showForm = "active";
       
-      
-      $scope.send = function(cinfo) {
-          if(cinfo && cinfo.subject.length > 1 && cinfo.body.length > 1) {
-            window.open('mailto:grahamcr.gvsu@gmail.com?subject=Message From '+ cinfo.subject +'&body='+cinfo.body + '\n\r\n\r -- ' + cinfo.email);
+          if($scope.activeForm === form) {
+              form = "close";
+              $scope.activeForm = 'none';
+          }else if(form != 'close' && $scope.activeForm != 'none') {
+              $scope.formWrapper = 'active';
           }
-          else {
-              alert("Looks like something is missing");
+          
+          switch(form) {
+              case "join":
+                  $scope.joinTeam = "active";
+                  $('#formArea').removeClass('in');
+              break;
+                  
+              case "auditions":
+                  $scope.auditions = "active";
+                  $('#formArea').removeClass('in');
+              break;
+                  
+              case "script":
+                  $scope.script = "active";
+                  $('#formArea').removeClass('in');
+              break;
+              
+              case "close":
+                $scope.showForm = false;
+                $scope.formWrapper = false;
+                form = 'none';
+                setTimeout(function(){ $('#formArea').removeClass('in');  }, 1000);
+                  
+                  
+              break;
           }
+          $scope.activeForm = form;
       };
 
-    /*****************************************************************************************
-        * Mock Service to get Post Data 
-    *****************************************************************************************/
-    ExampleService.getTeamInfo($scope.query)
-     .success(function (data) {
-         $scope.examples = data;
-        
-         
-    });
+
     /***************************************************************************************
     * On Page Load Function
     ****************************************************************************************/   
