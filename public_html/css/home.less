@@ -208,6 +208,16 @@
                 font-size: 25px;
                 margin-bottom: 25px;
             }
+            
+            @media screen and (max-width: 500px) {
+                padding-top: 25px;
+                span {
+                    font-size: 55px;
+                }
+                #title {
+                    font-size: 20px;
+                }
+            }
                 
         } 
         &.active {
@@ -237,6 +247,10 @@
                 &:hover {
                     background-color: @primary-yellow;
                 }
+                
+                @media screen and (max-width: 300px) {
+                     font-size: 15px;
+                }
             }
             .close-btn {
                 background-color: @primary-red;
@@ -250,12 +264,25 @@
                 &:hover {
                     background-color: @primary-yellow;
                 }
+                
+                @media screen and (max-width: 300px) {
+                     font-size: 15px;
+                }
+                @media screen and (max-width: 230px) {
+                    margin-left: 0px;
+                    margin-top: 15px;
+                }
             }
             .form-title {
                 margin-top: 55px;
                 color: @primary-blue;
                 font-size: 30px;
                 margin-bottom: 0px;
+                
+                @media screen and (max-width: 390px) {
+                    font-size: 22px;
+                    margin-top: 35px;
+                }
             }
             .form-title-hr {
                 width: 100%;
