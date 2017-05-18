@@ -81,6 +81,13 @@
         
     </div>
     
+    <div id="success-message" class='row'>
+        <div class="col-md-6 col-md-offset-3" id="success-message-col">
+            <span class="fa fa-check"></span>
+            <p id="title">Form Sent! Thank You!</p>
+        </div>
+    </div>
+    
    <div id="collapse-wrapper" class="{{formWrapper}}"> 
     <div class="collapse container {{showForm}}" id="formArea">
         
@@ -115,7 +122,9 @@
               <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
             </div>
             
-            <button class="submit-btn btn">Submit</button>
+            <button class="submit-btn btn" ng-click="submitform();">Submit</button>
+            
+            <button class="close-btn btn" ng-click="formtoggle('close');">Close</button>
             
         </div>
         
@@ -151,7 +160,9 @@
               <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
             </div>
             
-            <button class="submit-btn btn">Submit</button>
+            <button class="submit-btn btn" ng-click="submitform();">Submit</button>
+            
+            <button class="close-btn btn" ng-click="formtoggle('close');">Close</button>
         </div>
         
         
@@ -183,7 +194,9 @@
               <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
             </div>
             
-            <button class="submit-btn btn">Submit</button>
+            <button class="submit-btn btn" ng-click="submitform();">Submit</button>
+            
+            <button class="close-btn btn" ng-click="formtoggle('close');">Close</button>
         </div>
         
     </div>

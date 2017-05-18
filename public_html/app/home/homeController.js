@@ -28,7 +28,15 @@
       $scope.showForm = false;
       $scope.activeForm = 'none';
       
-      
+      $scope.submitform = function() {
+          $('#success-message').show();
+          $scope.formtoggle('close');
+          
+           setTimeout(function(){ 
+               $('#success-message').hide();
+           }, 3000);
+          
+      }
       $scope.formtoggle = function(form) {
           $scope.joinTeam = 
           $scope.auditions = 
