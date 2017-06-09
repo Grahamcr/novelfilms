@@ -1,16 +1,53 @@
-<div id="video-header">
-    <div id="overlay">
-        <div id="intro">
-            <p id="quote">"Frankly there isn't anyone you couldn't love once you've heard their story"</p>
-            <p id="credit">~ Mr. Rogers</p>
-            
-            <div id="c2a-button" redirect-home>
-                <p>Learn More</p>
+
+<div class="landing-page">
+    <div class="header">    
+
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" redirect-home>
+                <img alt="Brand" src="img/NovelFilms_white.png">  
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li id="home-link" class="{{home}}"><a redirect-home>Home <span class="sr-only">(current)</span></a></li>
+                <li id="about-link" class="{{about}}"><a redirect-about>About</a></li>
+                <li id="watch-link" class="{{watch}}"><a redirect-watch>Watch</a></li>
+                <li id="partner-link" class="{{partner}}"><a redirect-partner>Team</a></li>
+                <li id="contact-link" class="{{contact}}"><a redirect-contact>Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+    </nav>
+
+    </div>
+
+
+    <div id="video-header">
+        <div id="overlay">
+            <div id="intro">
+                <p id="quote">"Frankly there isn't anyone you couldn't love once you've heard their story"</p>
+                <p id="credit">~ Mr. Rogers</p>
+
+                <div id="c2a-button" redirect-home>
+                    <p>Learn More</p>
+                </div>
             </div>
         </div>
+        <video poster="img/rissa.png" id="bgvid" playsinline autoplay muted loop>
+
+        <source src="video/demo.mp4" type="video/mp4">
+        </video>
     </div>
-    <video poster="img/rissa.png" id="bgvid" playsinline autoplay muted loop>
-        
-    <source src="video/demo.mp4" type="video/mp4">
-    </video>
 </div>
