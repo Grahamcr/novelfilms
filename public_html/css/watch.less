@@ -171,6 +171,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
             color: @primary-blue;
             font-weight: 900;
             font-size: 24px;
+            margin-bottom: -3%;
             
         }
 
@@ -188,6 +189,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
                 display: inline-block;
                 width: 27%;
                 margin-bottom: -20px;
+                margin-top: 3%;
 
                 .play {
                     position: absolute;
@@ -201,7 +203,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
                     cursor: pointer;
 
                 }
+                
+                &.grow { transition: all .2s ease-in-out; }
+                &.grow:hover { 
+                    width: 33%; 
+                    margin-top: 1.5%;
+                }
             }
+            
 
         }
     }
