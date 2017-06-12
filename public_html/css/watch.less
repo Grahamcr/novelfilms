@@ -78,6 +78,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
                 width:200px;
                 margin-left: 40px;
             }
+             
+             
+             @media screen and (max-width:540px) {
+                 display: none;
+             }
+             
         }
         
         .hero-col {
@@ -118,6 +124,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
                         color: #FFF;
                         font-size: 45px;
                         padding-right: 40px;
+                        
+                        @media screen and (max-width:540px) {
+                            font-size: 30px;
+                            text-shadow: 2px 2px #333;
+                        }
                     }
                     .overlay-sub-header {
                         font-size: 18px;
@@ -125,6 +136,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
                         .standard-text();
                         margin-left: 40px;
                         width: 65%;
+                        
+                        @media screen and (max-width:540px) {
+                            font-size: 14px;
+                            text-shadow: 1px 1px #333;
+                            width: 90%;
+                        }
                     }
                     .c2a {
                         margin-left: 40px;
@@ -155,7 +172,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
                                 text-decoration: none;
                                 font-size: 18px;
                             }
+                            
+                            @media screen and (max-width:540px) {
+                                width: 90px;
+                                
+                                span, a {
+                                    font-size: 16px;
+                                }
+                            }
                         }
+                    }
+                    
+                    @media screen and (max-width:540px) {
+                        background-color: transparent;
+                        background: none;
                     }
                 }
             }
