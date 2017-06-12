@@ -196,12 +196,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
         margin-bottom: 50px;
 
         .thumbnail-header {
-            margin-left: 15px;
+            margin-left: 5px;
             .header-text();
             color: @primary-blue;
             font-weight: 900;
             font-size: 24px;
-            margin-bottom: -3%;
+            margin-bottom: -2%;
+            
+            @media screen and (max-width:410px) {
+                font-size: 20px;
+            }
             
         }
 
@@ -220,7 +224,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
                 width: 27%;
                 margin-bottom: -20px;
                 margin-top: 3%;
-
+                
+                @media screen and (max-width:860px) {
+                    width: 35%;
+                }
+                
+                @media screen and (max-width:620px) {
+                    width: 45%;
+                }
+                
+                @media screen and (max-width:410px) {
+                    width: 55%;
+                }
+                
+                @media screen and (max-width:310px) {
+                    width: 65%;
+                }
+                
                 .play {
                     position: absolute;
                     top: 50%;
@@ -278,6 +298,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
                 &.grow:hover { 
                     width: 33%; 
                     margin-top: 1.5%;
+                    
+                    @media screen and (max-width:860px) {
+                        width:41%;
+                    }
+                    @media screen and (max-width:620px) {
+                        width:51%;
+                    }
+                    @media screen and (max-width:410px) {
+                        width:61%;
+                    }
+                    @media screen and (max-width:310px) {
+                        width: 71%;
+                    }
                 }
             }
              @media screen and (min-width:750px) {
