@@ -204,15 +204,77 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383439', end
 
                 }
                 
-                &.grow { transition: all .2s ease-in-out; }
+                .text-overlay {
+                    max-height: 0px;
+                    overflow-y: hidden;
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+77&0+0,1+100 */
+                    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.77) 77%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.77) 77%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.77) 77%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+                    height: 50%;
+                    position: absolute;
+                    bottom: 24px;
+                    color: #FFF;
+                    padding:20px;
+                    visibility: hidden;
+                    cursor: pointer;
+                    width: 98%;
+                    margin-left: 1%;
+
+                    .title {
+                        font-weight: 900 !important;
+                        font-size: 20px;
+                        margin-bottom: -5px;
+                        .header-text();
+                    }
+                    .description {
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 25px;
+                        .standard-text();
+                    }
+                     @media screen and (max-width:980px) {
+                        .description {
+                            display: none;
+                        }
+                    }
+                }
+                
+                
+                &.grow { 
+                    transition: all .2s ease-in-out; 
+                }
                 &.grow:hover { 
                     width: 33%; 
                     margin-top: 1.5%;
                 }
             }
-            
+             @media screen and (min-width:750px) {
+                .test-col:hover  {
+                    .text-overlay {
+                        visibility: visible;
+                        max-height: 35%;
+                        transition-property: all;
+                        transition-duration: .5s;
+                        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                    }
+                    
+                    .play {
+                        position: absolute;
+                        top: 30%;
+                        left: 50%;
+                        transform: translate(-50%);
+                        width: 15%;
+                         transition-property: all;
+                        transition-duration: .5s;
+                        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                    }
 
+                }
+            }
         }
+            
     }
     
 
